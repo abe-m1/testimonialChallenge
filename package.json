@@ -1,0 +1,23 @@
+{
+  "name": "coding-bootcamp-testimonials-slider-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abe-m1/testimonialChallenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abe-m1/testimonialChallenge/issues"
+  },
+  "homepage": "https://github.com/abe-m1/testimonialChallenge#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
