@@ -1,7 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  color: #202046;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.row {
+  display: flex;
+}
+
+.one {
+  flex: 1;
+}
+.two {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button-container {
+  position: absolute;
+  bottom: -23px;
+  background: #fff;
+  left: 14%;
+  padding: 8px 8px;
+  border-radius: 35px;
+  box-shadow: 1px 16px 55px -15px rgba(32, 32, 70, 0.5);
+}
+
+.butn {
+  float: none !important;
+  margin: 10px 15px;
+}
+
+.card {
+  // height: 30rem;
+  // background-color: grey;
+  // padding: 5rem 5rem;
+  background-image: url(../images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 20% 15%;
+  position: relative;
+
+  &__content {
+    padding: 3rem;
+    // margin-left: 5rem;
+
+    p {
+      font-size: 2rem;
+      text-align: left;
+    }
+  }
+
+  &__image {
+    float: right;
+    position: relative;
+  }
+}
+
+.profile-image {
+  float: right;
+  box-shadow: 1px 32px 55px -45px rgba(32, 32, 70, 0.5);
+}
+
+.card__button-prev {
+  margin-right: 1rem;
+}
+
+.image-content {
+  margin-top: 2rem;
+}
+
+.image-container {
+  position: relative;
+}
+
+.testimonial-text {
+  margin-left: 6rem;
+}
+
+.card-content {
+  background-image: url(../images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 22%;
+  background-position: 22% 12%;
+}
+
+.card-content p {
+  padding-top: 75px;
+  margin-bottom: 20px;
+  width: 117%;
+  z-index: 1;
+  position: relative;
+  font-weight: 300;
+  line-height: 45px;
+  font-weight: 300;
+}
+
+.testimonial-author {
+  display: inline-block;
+  margin-left: 6rem;
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.testimonial-position {
+  color: #babacf;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section-main {
+  background-image: url(../../images/pattern-bg.svg),
+    url(../../images/pattern-curve.svg);
+  height: 95vh;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, 42%;
+  background-position: top right, bottom left;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 49px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .section-main {
+    padding: 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-main {
+    margin-top: 24px;
+    padding: 0;
+  }
+  .profile-image {
+    float: none !important;
+  }
+  .card-content {
+    background-size: 9%;
+    background-position: 49% 0%;
+  }
+  .card-content p {
+    padding-top: 5px;
+    width: 100%;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+  }
+  .image-content {
+    padding: 61px 35px;
+  }
+  .button-container {
+    position: absolute;
+    bottom: 44px;
+    background: #fff;
+    left: 41%;
+    padding: 8px 8px;
+    border-radius: 35px;
+    box-shadow: 1px 16px 55px -15px rgba(32, 32, 70, 0.5);
+  }
+  .button-container a {
+    float: none !important;
+    margin: 10px 15px;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .testimonial-text {
+    margin-left: 0;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card-content {
+    background-size: 13%;
+  }
+  .card-content p {
+    padding-top: 5px;
+    width: 100%;
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .image-content {
+    padding: 31px 35px;
+  }
+  .button-container {
+    position: absolute;
+    bottom: 18px;
+    background: #fff;
+    left: 37%;
+    padding: 1px 3px;
+    border-radius: 35px;
+    box-shadow: 1px 16px 55px -15px rgba(32, 32, 70, 0.5);
+  }
+  .button-container a {
+    float: none !important;
+    margin: 10px 12px;
+  }
 }
